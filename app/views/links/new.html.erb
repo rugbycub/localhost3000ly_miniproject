@@ -1,0 +1,6 @@
+<%= form_for :link, url: 'new', method: :post do |f| %>
+	<%=f.text_field :name, placeholder: "Site Name" %> <br>
+	<%=f.text_field :url, placeholder: "Site Address" %> <br>
+	<%=f.hidden_field :code, :value => "#{@code}" %>
+	<%= f.submit %>
+<% end %>

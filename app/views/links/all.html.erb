@@ -1,0 +1,7 @@
+<% @links.each do |link| %>
+<div>
+<div>Website Name: <%=link.name %> </div>
+<div>Website URL: http://<%=link.url %> </div>
+<div>To access this page, please visit <a href="localhost:3000/go/<%=link.code %>">localhost:3000/go/<%=link.code %></a> </div><br><br>
+</div>
+<% end %>
